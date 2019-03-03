@@ -1,14 +1,41 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+:root {
+    --blue-navy: #05205D;
+    --blue-light: #3155A7;
+    --brown-leather: #AB987A;
+    --orange-coral: #FF833D;
+    --white-egg: #F5F5F5;
+  }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (max-width: 575.98px) {
+    .header-area .main-menu .navbar {
+      height: auto;
+    }
+  }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .header-area .main-menu .navbar .nav-link
+    {
+        padding: .5rem 1rem;
+    }
+  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-area .main-menu .navbar .nav-link
+    {
+        font-size: 16px;
+    }
+  
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
